@@ -1,0 +1,116 @@
+body {
+	background-color: grey;
+}
+h1 {
+	text-align: center;
+	font-size: 150%;
+}
+#pod {
+	margin-left: 10%;
+	margin-bottom: 10px;
+	color: #0F2453;
+}
+.new-reservation {
+	margin-left: 10%;
+	font-size: 150%;
+	margin-top: 50px;
+	color: red;
+}
+.block-of-reservation { 
+	min-height: 300px;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #0F2453;
+	padding-top: 70px;
+	padding-left: 70px;
+	padding-right: 70px;
+	color: #E0C020;
+	border: solid #E0C020 2px;
+	border-radius: 8px;
+}
+td {
+	border-bottom: 1px solid #ddd;
+}
+.block-of-choose {
+	width: 30%;
+	float: right;
+	min-height: 250px;
+	text-align: center;
+	padding-top: 40px;
+}
+.dane {
+	width: 70%;
+	float: left;
+	min-height: 250px;
+	color:white !important;
+}
+input[type=button] {
+	height: 40px;
+	width: 70%;
+	-webkit-appearance: button;
+    cursor: pointer;
+	color: #E0C020;
+	border: solid #E0C020 1px;
+	background-color: rgba(0,0,0,0.4);
+}
+input[type=button]:hover {
+	height: 40px;
+	width: 70%;
+	-webkit-appearance: button;
+    cursor: pointer;
+	color: #0F2453;
+	border: solid #0F2453 1px;
+	background-color: #E0C020;
+}
+.pay {
+	display: none;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 200px;
+	background-color: #0F2453;
+	margin-top: 30px;
+	border: solid #E0C020 2px;
+	border-radius: 8px;
+	color: #E0C020;
+}
+
+@media screen and (max-width: 480px) {
+	
+	.block-of-choose {
+	width: 100%;
+	min-height: 250px;
+	text-align: center;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.block-of-reservation { 
+	min-height: 500px;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #0F2453;
+	padding-top: 70px;
+	padding-left: 70px;
+	padding-right: 70px;
+	color: #E0C020;
+	border: solid #E0C020 2px;
+	border-radius: 8px;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.dane {
+	width: 70%;
+	float: left;
+	min-height: 250px;
+	color:white !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	
+}

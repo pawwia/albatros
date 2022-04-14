@@ -1,0 +1,91 @@
+		</select>
+					<input type="submit" name="rezerwuj" value="dodaj rezerwacje">
+
+	<br>
+	
+	<br>
+	
+	<?php
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$_SESSION['home_number']=$_POST['n1'];
+	
+	if ($_SESSION['home_number']>0) {
+	?>
+	
+		<div class="oddo">
+			
+			Od:	<input class="oddo" type="text" name="od" id="from" style=""><br>
+			Do:	<input class="oddo" type="text" name="do" id="to"><br><br>
+				
+		</div>
+	
+	
+	
+	<?php
+	} else {
+		
+		echo "Nie wybrałeś żadnego domku";
+		
+	}
+	
+	$_SESSION['date_from']=$_POST['od'];
+	$_SESSION['date_to']=$_POST['do'];
+	
+	$wynik=mysqli_query($conn,"SELECT `Bookfrom` FROM `reservations` INNER JOIN house ON reservations.House=house.ID WHERE house.ID=".$_SESSION['home_number']."");
+	$wynik2=mysqli_query($conn,"SELECT `Bookto` FROM `reservations` INNER JOIN house ON reservations.House=house.ID WHERE house.ID=".$_SESSION['home_number']."");
+
+	if ((($_SESSION['date_from']<$wynik) && ($_SESSION['date_to']<$wynik2)) || (($_SESSION['date_from']>$wynik) && ($_SESSION['date_to']>$wynik2))) {
+		
+	?>
+
+	<div id="dane" style="color: white;">
+		<table>
+			<tr>
+				<td>Imie <input type="Podaj imie" name="imie"></td>
+			<tr>
+			<tr>
+				<td>Nazwisko <input type="Podaj nazwisko" name="nazwisko"></td>
+			</tr>
+			<tr>
+				<td>plec <input type="Podaj plec" name="plec"></td>
+			</tr>
+			<tr>
+				<td>telefon <input type="Podaj telefon" name="telefon"></td>
+			</tr>
+			<tr>
+				<td>telefon2 <input type="Podaj drugi telefon" name="telefon2"></td>
+			</tr>
+			<tr>
+				<td>data urodzenia <input type="Podaj date urodzenia" name="data-uro"></td>
+			</tr>
+			<tr>
+				<td>pesel <input type="Podaj pesel" name="pesel"></td>
+			</tr>
+			<tr>
+				<td>email <input type="Podaj email" name="email"></td>
+			</tr>
+		<table>
+		
+			<input type="submit" name="rezerwuj" value="dodaj rezerwacje">
+			<input type="submit" name="anuluj" value="anuluj rezerwacje">		
+		</form>
+	</div>
+
+	<?php
+	} else {
+		
+		echo "Nie można zarezerwować podanego terminu, ponieważ koliduje on z terminem już zarezerwowanym ";
+		
+	}
+	
+	?>

@@ -1,0 +1,75 @@
+@charset "UTF-8"
+
+@import modules/modules_all
+@import compass
+
+
+// Form widget
+// ==================================================
+
+.channels-wrapper
+  font-size: $channels-wrapper-font-size
+  font-family: $default-system-fonts-stack
+  max-width: $channels-wrapper-width
+  margin: $channels-wrapper-margin
+  float: $channels-wrapper-float
+  text-align: $channels-containers-align
+
+  .channel-container
+    display: inline-block
+    +border-radius($channel-container-border-radius)
+    height: $channel-container-height
+    border: $channel-container-border
+    margin: $channel-container-margin
+    cursor: $channel-container-cursor
+    +alpha-color('background', rgba($channel-container-bg-color, $channel-container-bg-opacity))
+    position: relative
+    +transition()
+    &:hover
+      border: $channel-container-hover-border
+      background: $channel-container-hover-bg
+      img
+        @if $channel-container-hover-reset-grayscale
+          @extend .reset-grayscale
+
+  .input-container,
+  .label-container,
+  .image-container
+    position: absolute
+
+  .image-container
+    display: $channel-image-container-display
+    width: $channel-image-container-width
+    left: $channel-image-container-left
+    top: $channel-image-container-top
+    margin: $channel-image-container-margin
+
+    img
+      width: 100%
+      @if $channel-image-grayscale
+        @extend .grayscale
+
+  .input-container
+    display: $channel-input-container-display
+    width: $channel-input-container-width
+    left: $channel-input-container-left
+    top: $channel-input-container-top
+    margin: $channel-input-container-margin
+
+  .label-container
+    display: $channel-label-container-display
+    width: $channel-label-container-width
+    text-align: $channel-label-container-text-align
+    left: $channel-label-container-left
+    top: $channel-label-container-top
+    margin: $channel-label-container-margin
+    height: $channel-label-container-height
+    label
+      width: 100%
+      top: 0
+      left: 0
+      @extend .vertical-center
+
+.selected
+  border: #{$channel-container-selected-border} !important
+  background: #{$channel-container-selected-bg} !important

@@ -1,0 +1,71 @@
+@charset "UTF-8"
+@import compass
+
+// Classes
+// ==================================================
+.channels-wrapper
+  .vertical-center
+    position: absolute
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+
+  .cf:before,
+  .cf:after
+    content: " "
+    display: table
+
+  .cf:after
+    clear: both
+
+  .hide
+    display: none
+
+  .not-online img,
+  .not-online label
+    opacity: 0.4
+
+  .tooltip
+    opacity: 0
+    z-index: 99
+    width: 100%
+    position: absolute
+    top: 0
+    color: #e8e6e6
+    padding: 5px 10px
+    text-align: center
+    background: rgba(51,51,51,0.9)
+    +transition()
+    +transform(scale(0))
+
+  .channel-container:hover .tooltip
+    opacity: 1
+    +transform(scale(1))
+
+.grayscale
+  -webkit-filter: grayscale(1)
+  -webkit-filter: grayscale(100%)
+  filter: grayscale(100%)
+  filter: url(#greyscale)
+  filter: gray
+
+.reset-grayscale
+  -webkit-filter: none
+  filter: none
+
+
+// Mixins
+// ==================================================
+=alpha-color($attribute, $color)
+  @if ($color != none) and ($color != transparent)
+    $percent: alpha($color) * 100%
+    $opaque: opacify($color, 1)
+  #{$attribute}: $color
+
+=respond-to($breakpoint)
+  @if map-has-key($media-queries-breakpoints, $breakpoint)
+    @media #{inspect(map-get($media-queries-breakpoints, $breakpoint))}
+      @content
+  @else
+    @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.'

@@ -1,0 +1,105 @@
+.none{display:none;}
+#domki{text-align:justify;}
+body{font-family: 'Oswald', sans-serif;}
+footer{width:100%; height:50px;background-color:#001a44;color:#fff;text-align:center}
+.map-responsive{  overflow:hidden;  padding-bottom:56.25%;  position:relative;  height:0;}
+.map-responsive iframe{ left:0;top:0; height:100%;width:100%; position:absolute;}
+a{text-decoration:none;color:black}
+a:hover{text-decoration:none;color:black}
+nav{ width:100%; min-height:50px; position: absolute  ;z-index:10;  transition: all 0.5s;margin-top:30px; }
+input[type=text]:hover {background-color: #666666; border: solid #E0C020 2px;}
+.block {width:100%; text-align: center; padding-left: 15px; padding-right: 15px;padding-top:10px; min-height: 500px; font-size: 20px; line-height: 35px; margin-top: 15px; padding-top: 10px;}
+.block1 {width:60%; text-align: center; margin-left: 20%; margin-right: 20%;padding-top:10px; min-height: 500px; font-size: 20px; line-height: 35px; background-color: white; color: black; padding-left: 20px; padding-right: 20px;}
+.block-title {width: 60%; min-height: 100px; background-color: #7e7e7e; color: white;  margin-left: 20%; margin-right: 20%;  text-align: center; padding-top:10px;}
+.block-background{background-image: url("img/morze.png"); padding-top: 10%; padding-bottom: 10%; background-size: 100% 100%; background-attachment: fixed;background-repeat: no-repeat; margin-top: 15px;}
+.block-reservation {}
+#input-id{width:90%;}
+#alert1{float:left;width:100%; height:80px;display:none;font-size:25px; color:red; text-decoration:bold;}
+.carousel-caption {position: absolute; top: 300px; font-size: 30px;}
+.banners--title-group {text-align: center;position: relative; top: -500px; color: white; font-size: 80px}
+.sticky-menu{position:fixed; top:0;left:0;background-color:#fff; opacity:0.9;   margin-top:0;  display:none; padding-top: 15px;}
+.strip{background-color:#fff; width:22px; height:2px; border-radius:1px;margin-top:8px;float:left;}
+.strip:first-child{margin-top:0}
+.mobile_menu_button{width:44px; height:36px;border:1px solid #535653;background-color:transparent;padding-left:11px; padding-right:11px;padding-top:0;display:none;float:right;margin-top:10px;margin-right:20px;}
+.mobile_menu_button:hover{border-color:#fff;background-color:#000000;opacity:0.99;}
+.buttons>ul{min-height:50px;margin-left:0 ; margin-right:0;}
+.buttons>ul>a:hover{color:#59ff69;border: solid white 1px;}
+.mobile-logo{float:left;}
+.subbut{color:#E0C020;background-color:rgba(0, 0, 0, .5);font-size:18px; width:70%;text-align:center; height:70px;margin-top:60px; border: solid #E0C020 1px; margin-left:auto; margin-right:auto; }
+.checknow{width:30%;height:50%;font-size:29px;background-color:rgba(0, 0, 0, .5); color:#E0C020;border-radius:20px;transition: all 1s;float:left;position:absolute; margin-top:30%;margin-left:10%; text-align: center;}
+.subbut:hover{background-color:#E0C020; color: white; }
+.sum {color:white;font-size:190%; border-top:4px solid white;width:30%;margin-top:30px;}
+.sum>p{text-align:left;}
+.oddo{background-color:#38393a; color:#white;border:none; width:50%;margin-bottom:10px; }
+.centrum{margin: 0 auto;width:1000px}
+.galery_indoor{width:100%;display:none; }
+.galery_outdoor{width:100%;display:none}
+.goup{width:100%; height:50px;background-color:#01334c;cursor:pointer;float:left;color:white;font-size:25px;line-height:50px}
+.goup1{width:100%; height:50px;background-color:#01334c;cursor:pointer;float:left;color:white;font-size:25px;line-height:50px}
+.galphoto>img{width:100%;height:100%}
+.galphoto{width:200px; height:200px;float:left;margin:30px;}
+.galzdj{filter: brightness(50%);transition: all 0.3s;border: solid 5px #002259;background-image:url(img/indoor.jpg);width:250px; height:200px;float:left;color:#f70000; text-align:center;font-size:30px; padding-top:80px;text-align:center }
+.galzdj1{margin-left:300px;background-image:url(img/outdoor.jpg);}
+#galery{width:100%;float:left;padding-right:150px; padding-left:150px;}
+.galzdj:hover{filter: brightness(100%);border: solid 2px #094dbc;font-size:50px;cursor:pointer}
+.galery_choose{margin-left:auto; margin-right:auto;width:100%;;height:200px;display:block;text-align:center}
+.failedmail{background-color:red; width:100%; height:50px;color:white;display:none;}
+.koniec-blocka{width:40%}
+.main-reservation{background-color: #ececec;}
+.block-reservation{display:none;}
+.block-reservation{display:none; background-image: url("img/morze.png"); width: 90%; margin-left: auto; margin-right: auto; border-radius: 8px;}
+.title-reservation{width: 90%; min-height: 70px; background-color: #0f2453;margin-left: auto; margin-right: auto; padding-top: 15px; margin-bottom: 30px;  color: #E0C020;}
+.name-company{font-size: 150%; float: left; margin-right: 40%; margin-left:15%; margin-top: 10px;}
+.main-block-pay {width: 80%; min-height: 300px; margin-left: auto; margin-right: auto; background-color: rgba(0,0,0,0.5); padding-left: 10%; padding-right: 10%; color: #E0C020; border: solid #E0C020 1px;}
+.block-pay{display:none}
+.main-block-reservation { color: #E0C020; border-radius: 8px; padding-bottom: 10px;}
+.termin {background-image: url("img/morze.png"); width: 90%; margin-left: auto; margin-right: auto; min-height: 200px; padding-top: 20px; border-radius: 8px;}
+.kalendarz-termin {width: 60%; margin-left: auto; margin-right: auto; text-align: center;padding-top: 10px;background-color: rgba(0,0,0,0.7); padding-bottom: 10px; color: #E0C020; border-radius: 8px;}
+.sum { text-align: center; color: #E0C020;}
+
+
+	@media screen and (min-width: 738px) {
+.buttons>ul>a{float:left;min-height:30px;list-style:none;margin-top:20px; text-align:center; vertical-align:middle;min-width:60px;font-size:15px; padding-left:15px; padding-right:15px;display:block;font-family: 'Times New Roman';font-weight: bold;}
+.buttons>ul>a:hover{float:left;min-height:30px;list-style:none;margin-top:20px; text-align:center; vertical-align:middle;min-width:60px;font-size:15px; padding-left:15px; padding-right:13px;display:block;font-family: 'Times New Roman';font-weight: bold;}
+.buttons{float:left;margin:auto;}
+.mobile-logo{display:none}
+#logo{margin-top:20px;}
+#kontakt{text-align:left;}
+.galery_indoor{margin-left:auto; margin-right:auto}
+.galery_outdoor{margin-left:auto; margin-right:auto}
+.galzdj1{float:right;}
+}
+	
+	
+
+	@media screen and  (max-width: 737px) {
+		#galery{padding:0px;}
+		.galery_choose{text-align:center;margin-left:auto; margin-right:auto;}
+.galzdj1{margin-left:20%;float:right;}
+.mobile-logo{display:block;}
+.centrum{width:100%}
+#logo{display:none}
+		.buttons{display:none;}
+.mobile_menu_button{display:block;float:right;text-align:right;}
+nav{opacity:0.8;background-color: #0f2453; margin-top: 0%;float:left; color: white;width:100%;min-height:70px;}
+.buttons>ul>a{list-style-type:none;font-weight:bold; width:100% !important ;float:left;height: 70px;font-size:25px; padding-top:15px;border:0px solid black; background-color: #0f2453; color: white;}
+.buttons>ul{width:100%;min-height:9px;background-color: #0f2453}
+.b1{width:100%;height:70px;}
+.buttons>ul>a:hover{}
+.checknow{position:static; margin:0 auto; width:100%; height:60%;border-radius:0px; text-align: center; background-color: #0f2453 !important; padding-top: 10% !important;}
+.subbut{width:80%; margin-bottom: 45px !important; margin-left: auto !important; margin-right: auto !important;}
+.block1 {width:80% !important; text-align: center; margin-left: auto !important; margin-right: auto !important;padding-top:5px; min-height: 500px; font-size: 15px; line-height: 30px; background-color: white; color: black; padding-left: 10%; padding-right: 10%;}
+	}
+	
+	.failed-reservation{width:90%; background-color:red; color:white;min-height:30%;font-size:190%;margin:auto; text-align:center;display:none;}
+	.failed-reservation2{width:90%; background-color:white; min-height: 300px; color:white;height:30%;font-size:190%;margin:auto; text-align:center;display:none;}
+	input[type=text]:hover {background-color: #666666; border: solid #E0C020 2px;}
+	
+	
+
+	
+	
+	h1{font-size:150% !important;}
+.elemkal{}
+.elemkal>input{float:right;width:100%;}
+	

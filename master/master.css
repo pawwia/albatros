@@ -1,0 +1,198 @@
+.askforpass{background-color:#001a44;width:40%; min-height:150px;;color:white;margin:0 auto;margin-top:20%;text-align:center;}
+.askforpass>form>input{color:black;background-color:grey;border:none; width:90%;}
+a{text-decoration:none; color:black;}
+.content{width:50%; height:200px;background-color:#29497c;margin-left:auto; margin-right:auto;}	
+.kafelek{width:50%; min-height:100px; background-color:#29497c;float:left;transition: all 0.4s;line-height:; font-size:300%;text-align:center}
+.kafelek:hover{background-color:#29497c;text-decoration:none;color:white }
+.paneladd {background-color: grey;float:left; width: 100%;min-height:1000px; margin-left:auto;margin-right:auto; border:solid black 1px; color: black;}
+#dodaj { text-align: center;}
+#usun {width: 100%; text-align: center;}
+.oddo{background-color:#38393a; color:#white;border:none; width:50%;margin-top:10px; padding-left: 0%; padding-right: 0%; }
+.kale {border: 1px solid black; background-color: white;}
+#dane {width: 60%; margin-left: auto; margin-right: auto; background-color: black; color: white;}
+.left{float:left;width:30%}
+.right{float:left;}
+.addall{margin-left:auto;margin-right:auto;width:80%;min-height:500px}
+.menu{background-color:black; color:white;border:1px solid red;width:90px;height:50px;font-size:30px; position:fixed; top:0px; left:0px;z-index:100;border-radius:19px}
+
+.dostepnosc1{margin-top:5%; }
+.getdate{margin-top:80px;}
+#monate{width:49%}
+#jaren{width:49%;}
+
+.lookanal{margin-top:80px;background-color:#001b47; color:white; width:80%; margin-left:auto; margin-right:auto; min-height:10px}
+body {
+}
+.lookelement{border-bottom: white 2px solid;}
+.butony{ height:100px; color:white; background-color:black;font-size:32px;}
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px; 
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media(min-width:768px) {
+  #wrapper {
+    padding-left: 0;
+  }
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+
+.dostepnosc{float:left;}
+.action{
+		min-width:100%;
+		}
+
+		.lookelement>input{color:black;border:none;float:none;width:100%;;}
+		.lookelement{MIN-height:30px;;}
+.search{ 
+
+height:300px; 
+background-color: #2a3951;
+margin-top:30px;
+padding-top:10px;
+padding-left:10px;
+color:white;
+
+}
+.search>input{color:black;}
+.search>button{color:black;}
+.userzy{
+	
+min-height:300px; 
+background-color: #2a3951;
+margin-top:30px;
+padding-top:10px;
+padding-left:10px;
+color:white;
+	
+}
+
+.osoba{font-size:30px;}
+.tabelka-users{border: black 1px solid;
+width:90%; min-height:100px;margin-left:2%;; margin-right:2%;
+
+}
+.wiersz{
+	width:100%; min-height:50px;
+ background-color: ##76c653;
+ cursor:pointer;
+ }
+
+.elmtab
+{
+	width:20%; min-height:50px;float:left; text-align:center;border:1px solid white;
+	
+}
+.wiersz:hover{background-color:#53abc6}
+.wiersz>:first-child{background-color:red;}
+
+	@media screen and  (max-width: 737px) {
+	
+.elmtab{width:100%;}
+	
+	}
+	body {background-color:#8faeb7}
+	#suball{width:100%; height:2%; color:white; background-color:black; font-size:200%;}
+	#suball:hover{background-color: white; color:black; margin:1px solid black;}
